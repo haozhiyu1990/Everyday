@@ -14,12 +14,13 @@
 	$test_id = $_REQUEST['test_id'];
 	$mysqli = new mysqli('localhost', 'root', 'qq641711559', 'test');
 	if ($mysqli->connect_errno) {
-    	echo "Connect failed: ", $mysqli->connect_error;
+    	echo "Connect failed: ". $mysqli->connect_error;
     	exit;
 	}
-	if ($result = $mysqli->query("select * from test_table where test_id=$test_id")) {
+	$sql = "select * from test_table where test_id=".$test_id;
+	if ($mysqli->query($sql) == TRUE) {
+		$result = $mysqli->query($sql);
 		$data = array();
-
 		if ($result->num_rows==1) {
 			foreach ($result->fetch_assoc() as $key => $value) {
 				$data[$key] = $value;
