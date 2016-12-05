@@ -1,0 +1,47 @@
+.div1 {
+	border: 0px solid red;
+	width: 310px;
+	margin: 200px auto;
+}
+
+.topline {
+	display: block;
+}
+
+.topline font {
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.topline a {
+	font-size: 10px;
+	float: right;
+	position: relative;
+	right: 13px;
+	top: 5px;
+}
+
+.face {
+	margin: 0px;
+	padding: 0px;
+}
+
+.face li {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	list-style-type: none;
+}
+
+.face li img {
+	width: 60px;
+	height: 60px;
+	border: 2px solid blue;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.sss:hover img {
+	border: 2px solid red;
+}

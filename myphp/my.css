@@ -1,0 +1,14 @@
+.id1 {
+	background-color: silver;
+	color: green;
+}
+
+.id2 {
+	background-color: purple;
+	color: red;
+	width: 300px;
+}
+
+* {
+	margin: 0 0 0 0;
+}
